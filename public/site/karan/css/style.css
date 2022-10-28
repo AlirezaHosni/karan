@@ -1,0 +1,502 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sahel;
+}
+
+@font-face {
+    font-family: sahel;
+    src: url("../fonts/Sahel-Black.woff2") format("ttf"), url("../fonts/Sahel.woff") format("woff");
+}
+
+nav {
+    background-image: url("../images/header.png");
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+    z-index: 100;
+    background-color: #F8D4B1;
+}
+
+body {
+    background-color: #F8D4B1 !important;
+    z-index: 1000;
+    background-image: url("../images/dawda.png");
+    background-size: 55% !important;
+    background-position: center center;
+}
+
+.logo {
+    width: 100px;
+    margin-left: 50px;
+
+}
+
+.header {
+    position: relative;
+}
+
+.header-icons {
+    margin-right: 100px;
+}
+
+.header-icons img {
+    background: white;
+    width: 40px;
+    padding: 11px;
+    height: 40px;
+    border-radius: 15px;
+    margin-right: 15px;
+}
+
+.main-header p {
+    color: #32074F;
+    font-size: 12px;
+    font-weight: 600;
+    padding-left: 10px;
+}
+
+.main-header .header-icons {
+    margin: 20px auto;
+}
+
+.hamburger-menu {
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    top: 4%;
+    left: 7%;
+    z-index: 1000;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    cursor: pointer;
+    transition: transform .5s;
+}
+
+.menu-line {
+    width: 100%;
+    height: 4px;
+    background-color: #32074F;
+    transition: all .5s .5s;
+    transform-origin: right;
+}
+
+.main-header .checkbox:checked~.hamburger-menu .menu .line1 {
+    transform: rotateZ(-40deg);
+}
+
+.main-header .checkbox:checked~.hamburger-menu .menu .line2 {
+    opacity: 0;
+}
+
+.main-header .checkbox:checked~.hamburger-menu .menu .line3 {
+    transform: rotateZ(40deg);
+}
+
+.main-header .checkbox:checked~.hamburger-menu .menu {
+    transform: rotateZ(90deg);
+}
+
+.main-header .checkbox:checked~.main-navbar {
+    left: 0;
+}
+
+.main-navbar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    align-items: center;
+    background-image: linear-gradient(to bottom, #0f0f0f2b, #8c07f141), url("../images/layyee11.png");
+    background-position: center;
+    background-size: cover;
+    top: 0;
+    left: -70vw;
+    width: 45vw;
+    height: 100vh;
+    background-color: #F8D4B1;
+    padding-top: 80px;
+    transition: left .8s;
+    z-index: 1;
+}
+
+.main-nav li {
+    margin: 10px;
+    text-align: center;
+    background-color: #32074F;
+    padding: 0px 50px;
+    border-radius: 10px;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 900;
+    transition: all .6s;
+}
+
+.main-nav a:hover {
+    color: wheat;
+    text-decoration: none;
+}
+
+.header-search button {
+    background-color: white;
+    outline: 0;
+    padding: 5px 15px;
+    margin-left: 5px;
+    border-radius: 5px;
+    border: none;
+    height: 37px;
+}
+
+.main-navbar .header-search {
+    margin: 20px auto;
+}
+
+.text-align-left {
+    align-items: end;
+}
+
+.goat img {
+    width: 52px;
+    position: absolute;
+    top: 77%;
+    left: 50%;
+    transform: translate(-40%, -50%);
+}
+
+.down-menu {
+    overflow: hidden;
+    background: #F7C600;
+    border-radius: 10px;
+    margin-top: 3px;
+}
+
+
+.down-menu-text {
+    flex-shrink: 0;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+@keyframes tickerh {
+    0% {
+        transform: translate3d(-80%, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(80%, 0, 0);
+    }
+}
+
+.down-menu-move {
+    animation: tickerh linear 30s infinite;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.down-menu-move:hover {
+    animation-play-state: paused;
+}
+.burger-btn {
+    margin-right: 10px;
+}
+
+.about-us-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 350px);
+    padding: 20px 0px;
+}
+.maryam-img{
+    width: 330px !important;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.about-us-content img {
+    width: 220px;
+}
+
+.about-us-text h3 {
+    font-size: 15px;
+    margin-top: 20px;
+    color: #32074F;
+    font-weight: 700;
+}
+
+.about-us-content button {
+    width: 200px;
+    text-align: center;
+    margin-top: 10px;
+    outline: 0;
+    border: 0;
+    border-radius: 7px;
+    background-color: #32074F;
+    color: white;
+    padding: 5px 10px;
+}
+
+.img-right img {
+    width: 110px;
+    margin-left: 10px;
+}
+.two-img{
+    margin-left: 50px;
+}
+.img-left img {
+    width: 130px;
+}
+
+.text-info-title {
+    color: black;
+    padding-right: 10px;
+    padding-top: 0px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.info {
+    color: #373737be !important;
+    font-size: 14px;
+    padding-top: 7px;
+    font-weight: 900;
+    letter-spacing: .6px;
+    text-align: justify;
+    line-height: 25px;
+    padding-right: 60px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 450px);
+    padding: 20px;
+    justify-content: space-around;
+}
+
+.our-service img {
+    width: 250px;
+    transition: all .6s;
+}
+.our-service img:hover{
+    transform: scale(1.07);
+}
+
+.our-service {
+    justify-content: space-around;
+}
+
+.gallery {
+    margin: 30px 0px;
+}
+
+.gallery-img {
+    width: 100%;
+}
+
+.gallery-img h2 {
+    position: absolute;
+    top: 50%;
+    right: 15%;
+    z-index: 1000;
+    color: white;
+    font-weight: 900;
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.99);
+}
+.gallery-img-study{
+    width: 70% !important;
+}
+.gallery-img img {
+    width: 65%;
+}
+.position {
+    position: relative;
+    width: 500px;
+    margin-top: 60px;
+    margin-right: 60px;
+}
+
+.box-item {
+    width: 140px;
+    height: 170px;
+    position: absolute;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 60px 5px;
+    font-weight: 400;
+    z-index: 1;
+    transition: all .5s;
+    opacity: .9;
+}
+
+.box1 {
+    top: 30%;
+    left: 10%;
+    text-align: center;
+    color: white;
+}
+
+.box2 {
+    top: 35%;
+    left: 40%;
+    text-align: center;
+    z-index: 1;
+}
+
+.box3 {
+    top: 40%;
+    left: 25%;
+    text-align: center;
+    z-index: 1;
+}
+.box1:hover,
+.box2:hover,
+.box3:hover{
+    z-index: 100;
+    transform: scale(1.05);
+    opacity: 1;
+    /* top: 40%;
+    left: 25%; */
+}
+
+
+.gallery-box-text {
+    position: relative;
+}
+
+.our-teachers-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 33.3%);
+    grid-template-rows: repeat(1, 470px);
+}
+
+.teacher-card img {
+    width: 180px;
+    margin-bottom: 10px;
+}
+
+.teacher-card h3 {
+    color: #9A9BE7;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 10px 0px;
+}
+
+.teacher-card h5 {
+    color: #9A9BE7;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.teacher-card p {
+    font-size: 14px;
+    color: #373737;
+    font-weight: bold;
+    padding: 10px 40px;
+    text-align: justify;
+    line-height: 25px;
+}
+
+.our-teachers-line {
+    border: 2px solid #7FD1D0;
+    background-color: #7FD1D0;
+    width: 50%;
+}
+
+.top-footer {
+    text-align: center;
+    position: relative;
+    margin-top: 30px;
+    border-bottom: 4px solid white;
+}
+
+.footer-img {
+    width: 250px;
+}
+
+.footer-goat {
+    position: absolute;
+    width: 63px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main-footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+}
+
+.main-footer {
+    background-color: #32074F;
+}
+
+.icons-group i {
+    font-size: 20px;
+    color: white;
+    background-color: #373737;
+    border-radius: 50%;
+    padding: 7px;
+}
+
+.icons {
+    background-color: white;
+    margin-right: 10px;
+    padding: 3px 10px;
+    border-radius: 8px;
+
+}
+
+.footer-contact h3 {
+    background-color: white;
+    color: #373737;
+    padding: 10px 20px;
+    margin-left: 15px;
+    border-radius: 8px;
+    font-size: 22px;
+}
+
+.down-footer {
+    background-color: #F7C600;
+}
+
+.down-footer-content {
+    height: 30vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-text-area {
+    width: 33.3%;
+}
+
+.img-group-footer {
+    width: 33.3%;
+    text-align: left;
+}
+
+.img-group-footer img {
+    width: 300px;
+}
+
+.fade-in{
+    opacity: 0;
+    transition: opacity .8s ease-in;
+}
+.fade-in.appear{
+    opacity: 1;
+}

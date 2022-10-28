@@ -1,0 +1,129 @@
+@media(max-width:576px){
+    .about-us-content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-info{
+        width: 100%;
+    }
+    .text-info{
+        width: 100%;
+    }
+    .down-menu{
+        height: 80px;
+    }
+    .left-side-header .header-search{
+        display: none !important;
+    }
+    body {
+        background-image: url("../images/dawda.png");
+        background-size: 80% !important;
+        background-position: center;
+    }
+    .main-navbar {
+        width: 70vw;
+    }
+    .header-icons{
+        display: flex;
+        justify-content: center;
+    }
+    .footer-contact h3{
+        font-size: 15px;
+    }
+    .down-menu{
+        z-index: 1000000;
+    }
+    @keyframes danial {
+        0% {
+            left: -50px;
+        }
+    
+        100% {
+            left: 100px
+        }
+    }
+    
+}
+@media (max-width:770px) {
+    .right-side-header .header-icons{
+        display: none !important;
+    }
+    .box-item{
+        margin-top: 20px;
+    }
+    .gallery-2{
+        margin-top: 100px;
+    }
+    .header-copy{
+        opacity: 0;
+    }
+    .about-us-grid{
+        display: grid;
+        grid-template-columns: repeat(1,100%);
+        grid-template-rows: repeat(4,300px);
+    }
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+        grid-template-rows: repeat(4, 350px);
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .gallery-box-text{
+        align-self: start;
+    }
+    .box1{
+        top: 80%;
+        left: 10%;
+        text-align: left;
+        color: white;
+    }
+    .box2{
+        top: 90%;
+        left: 45%;
+        text-align: right;
+    }
+    .box3{
+        top: 100%;
+        left: 30%;
+        text-align:center;
+    }
+    .gallery-img img {
+        width: 75%;
+    }
+    .gallery-img{
+        text-align: center;
+    }
+    .our-teachers-grid{
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+        grid-template-rows: repeat(3, 450px);
+    }
+    .main-footer-content{
+        flex-direction: column;
+        justify-content: center;
+        height: 30vh;
+    }
+    .icons-group{
+        margin-bottom: 20px;
+    }
+    .down-footer-content{
+        flex-direction: column;
+        justify-content: center;
+        height: 52vh;
+    }
+    .footer-text-area{
+        width: 50%;
+    }
+    .img-group-footer{
+        width: 50%;
+        text-align: center;
+    }
+    .img-group-footer img{
+        width: 200px;
+    }
+    .our-service{
+        justify-content: center !important;
+    }
+}
